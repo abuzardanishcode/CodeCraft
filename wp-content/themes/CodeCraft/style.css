@@ -6,3 +6,178 @@
    
 
 */
+
+*{
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #313135;
+}
+
+header{
+    display: flex;
+    background-color: #212024;
+    justify-content: center;
+    gap: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container{
+    padding: 20px 175px;
+}
+
+.logo{
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.first-word {
+    color: #FF0000; /* Change to your desired color */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+ul#menu-main-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul#menu-main-menu li a:hover, .nav-button:hover{
+    color: #FF0000;
+}
+
+/* Change the color of the active menu item */
+.menu .current-menu-item  a {
+    color: #FF0000; /* Change to your desired color */
+}
+
+.nav-button{
+    font-size: 20px;
+    padding: 15px;
+    border: 2px solid #FF0000;
+    border-radius: 2px;
+}
+
+#darkModeToggle {
+    display: none;
+}
+
+#darkModeToggle:checked + label {
+    background-color: #333;
+}
+
+#darkModeToggle:checked + label::before {
+    content: "\f186"; /* Moon icon (Unicode) */
+    font-family: 'Font Awesome 5 Free'; /* Use a font with moon and sun icons */
+    padding-right: 10px;
+}
+
+label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Banner CSS */
+.main-content{
+    /*margin-top: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    padding: 145px 0px;
+}
+
+
+
+.banner-title{
+    color: var(--Whit, #FFF);
+    text-shadow: 4px 5px 15px rgb(255 83 0 / 40%);
+    font-family: Poppins;
+    font-size: 48.83px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 73.2px;
+    width: 760px;
+}
+
+.banner-content{
+    color: var(--Whit, #FFF);
+    font-family: Poppins;
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 678px;
+    height: 71px;
+}
+
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.project-button{
+    padding: 15px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    border: 2px solid #FFFFFF;
+}
+
+.project-button a{
+    color: var(--Orange, #FF5300);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.project-button:hover{
+    background: none;
+    border: 2px solid #FF0000;
+}
+
+.video-button{
+    padding: 19px;
+}
+
+
+.image-container{
+    display: flex;
+    align-items: center;
+}
+
+
+.banner-image img{
+   height: 570px;
+}
